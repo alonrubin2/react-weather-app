@@ -32,7 +32,7 @@ class App extends React.Component {
                         return <SingleDay key={index}
                             day={day.day}
                             temp={`${day.temperature}` + String.fromCharCode(176)}
-                            icon={`"./icons/${day.icon}"`}
+                            icon={day.icon}
                             description={day.description} />
                     })}
                 </div>
